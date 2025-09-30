@@ -12,5 +12,3 @@ try:
             print(indice+1,line, end='')
 except FileNotFoundError:
     print(f"El archivo '{archivo}' no existe")
-except Exception as e:
-    print(f"Ocurrió un error: {e}")
