@@ -1,3 +1,5 @@
+#autor : Maria Chaparro 
+# git : MChaparroCaballero
 import os
 import sys
 
@@ -23,7 +25,7 @@ except FileNotFoundError:
 except Exception as e:
     print(f"Ocurrió un error: {e}")
 
-
+#excepcion para que maneje que no hayas metido argumentos
 
 
 
