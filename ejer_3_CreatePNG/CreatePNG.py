@@ -35,3 +35,24 @@ try:
 except Exception as e:
     print(f"Ocurrió un error: {e}")
 #falta excepciones, crear archivos y comparar no repetidos
+
+#for i in range(numero_archivos):
+    # En cada iteración del FOR, queremos generar UN nombre y crear UN archivo.
+
+    # 1. Bucle WHILE anidado
+    #while True: 
+        # Generar nombre_aleatorio...
+        
+        # 2. Comprobación
+        #if nombre_aleatorio not in nombres_archivos_creados:
+            #nombre_unico = nombre_aleatorio
+            #break  # 🛑 ¡SALIMOS DEL WHILE!
+    
+    # 3. CREACIÓN DEL ARCHIVO
+    # El código continúa AQUÍ después del 'break'.
+    #ruta_archivo = os.path.join(nombre_carpeta, f"{nombre_unico}.txt")
+    #with open(ruta_archivo, 'w') as f:
+        #f.write("Contenido...")
+    
+    #nombres_archivos_creados.append(nombre_unico)
+    # Al final, el FOR pasa a la siguiente iteración (al siguiente archivo).
