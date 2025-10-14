@@ -3,7 +3,7 @@
 import os
 import sys
 
-
+#para comprovar si nos ha pasado los argumento y si no que no explote pero que informe y cierre
 if len(sys.argv) != 2:
     print("No me has pasado todos los argumentos, necesito nombre del programa y el archivo a leer")
     sys.exit(1)
@@ -39,4 +39,4 @@ except FileNotFoundError:
     print(f"El archivo '{archivo}' no existe")
 except Exception as e:
     print(f"Ocurrió un error: {e}")
-    #excepcion para que maneje que no hayas metido argumentos
+    #excepcion general

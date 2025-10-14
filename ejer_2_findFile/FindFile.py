@@ -3,6 +3,12 @@
 import os
 import sys
 
+#para comprovar si nos ha pasado los argumento y si no que no explote pero que informe y cierre
+if len(sys.argv) != 3:
+    print("No me has pasado todos los argumentos, necesito nombre del programa , el archivo a leer y la cadena o caracter")
+    sys.exit(1)
+
+
 #los argumentos que le pasamos por consola se guardan en sys.argv,
 #  siendo el primer elemento el programa (posicion 0), el segundo el archivo donde buscar (posición 1) y
 #  el tercero la palabra a buscar (posición 2)
@@ -34,7 +40,7 @@ except FileNotFoundError:
 except Exception as e:
     print(f"Ocurrió un error: {e}")
 
-#excepcion para que maneje que no hayas metido argumentos
+#para excepcion general
 
 
 
