@@ -53,22 +53,14 @@ try:
         #usamos bucle infinito para que hasta que no se cumpla la condicion de que no es repe siga 1 nombre nuevo luego cuando lo crea itera otra vez el for
         while True:
             #me generas un nuevo nombre y si no esta en la lista me lo añades y me lo creas en ese orden y escribimos tipo algo para que se vea 
-            nuevo_nombre = generar_nombre_aleatorio()  # Llamas a tu función para crear el nombre aleatorio
+            nuevo_nombre = generar_nombre_aleatorio()  # Llamas a tu función
             if nuevo_nombre not in nombres_archivos:
                 nombres_archivos.append(nuevo_nombre)
-                ruta_archivo = os.path.join(nombre_carpeta, f"{nuevo_nombre}.png")
-                try:
-                    #como son archivos binarios abrimos en modo wb, si las imagenes son binarias
-                    with open(ruta_archivo, 'wb') as f:
-                        pass  # Crear un archivo vacío de png
-                    print("Añadido:", nuevo_nombre)
-                    break  # Sale del while y sigue con el siguiente
-                except IOError as e:
-                    # Este try/except maneja fallos de disco/permisos y evita que el programa se detenga
-                    print(f"Error al crear el archivo {nuevo_nombre}.png (posibles permisos/disco lleno): {e}")
-                    # Usamos 'continue' para que el while True vuelva a generar un nuevo nombre y lo intente de nuevo
-                    continue
-            #que si existe un archivo con ese nombre? que me lo diga y genere otro
+                ruta_archivo = os.path.join(nombre_carpeta, f"{nuevo_nombre}.txt")
+                with open(ruta_archivo, 'w') as f:
+                    f.write(f"Este es el contenido del archivo {nuevo_nombre}")
+                print("Añadido:", nuevo_nombre)
+                break  # Sale del while y sigue con el siguiente
             else:
                 print(f"{nuevo_nombre} ya existe, creando otro...")
 #si existe la carpeta mandamos error               

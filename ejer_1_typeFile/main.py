@@ -4,7 +4,7 @@ import os
 import sys
 
 #este programa recibe por linea de comandos el nombre de un archivo de texto
-# y muestra su contenido por pantalla numerando las lineas
+# y muestra su contenido por terminal numerando las lineas
 
 
 #para comprovar si nos ha pasado los argumento y si no que no explote pero que informe y cierre
@@ -36,8 +36,10 @@ try:
             #el end='' es para que no nos meta un salto de linea extra al imprimir 
             # (porque tambien imprime los saltos de linea del propio archivo)
             #y el +1 es para que el indice empiece en 1 en vez de 0
-            
-            print(indice+1,line, end='')
+            # Calculamos el número de línea que debe ser 1-based. y lo formateamos a 4 dígitos con ceros a la izquierda con lo de :04d
+            numero_linea = indice + 1
+
+            print(f"{numero_linea:04d}: {line}", end='')
 
 except FileNotFoundError:
     print(f"El archivo '{archivo}' no existe")
