@@ -11,8 +11,8 @@ nicknames= [] #array de nombres
 ranking_de_jugadores = {} #lista de diccionarios
 puntuacion_global=0
 puntuacion_media=0
-nombre_archivo_general = 'resumen_general.txt'
-nombre_archivo_ranking ='ranking_jugadores.txt'
+nombre_archivo_general = 'resumen.txt'
+nombre_archivo_ranking ='scores.txt'
 
 
 #funcion que devuelve los puntos de un jugador en el diccionario
@@ -111,3 +111,4 @@ except Exception as e:
     print(f"Ocurrió un error al leer el archivo: {e}")
 
     sys.exit(1)
+
