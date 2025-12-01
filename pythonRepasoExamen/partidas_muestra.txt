@@ -1,5 +1,6 @@
-NeoX;Principiante;100;10
-LunaCoder;Intermedio;55;20
-Malformed;LineWithout;20;20
-PixelWarrior;Avanzado;220;30
-Delta;Intermedio;210;22
+NeoX.100.Principiante
+LunaCoder.55.Intermedio
+Malformed.20.LineWithout
+PixelWarrior.220.Avanzado
+
+Delta.210.Intermedio
