@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Titular - La Edición Completa</title>
+    <style>
+        /* --- ESTILOS CSS --- */
+        body {
+            font-family: 'Georgia', serif; /* Tipo de letra más 'periodístico' */
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        /* Encabezado Principal */
+        header {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            border-bottom: 5px solid #cc0000; /* Borde rojo llamativo */
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3.5em;
+            font-family: 'Times New Roman', serif;
+            color: white;
+        }
+        header p {
+            margin-top: 5px;
+            font-size: 1.2em;
+            color: #ccc;
+        }
+        
+        /* Barra de Navegación */
+        nav {
+            background-color: #333;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            border-right: 1px solid #555;
+        }
+        nav ul li:last-child {
+            border-right: none;
+        }
+        nav ul li a {
+            display: block;
+            padding: 15px 25px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #cc0000;
+        }
+        
+        /* Contenedor Principal */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            display: flex;
+            gap: 20px; /* Espacio entre columnas */
+        }
+
+        /* Columna de Noticias (Principal) */
+        .main-content {
+            flex: 3; /* Ocupa 3/4 del espacio */
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Columna Lateral (Secundaria) */
+        .sidebar {
+            flex: 1; /* Ocupa 1/4 del espacio */
+            background-color: #f9f9f9;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            border-left: 1px dashed #ccc;
+        }
+        
+        /* Estilos de Noticias */
+        .noticia-principal h2 {
+            color: #cc0000;
+            font-size: 2.2em;
+            margin-top: 0;
+            border-bottom: 2px solid #cc0000;
+            padding-bottom: 10px;
+        }
+        .noticia-secundaria {
+            border-bottom: 1px solid #eee;
+            padding: 15px 0;
+        }
+        .noticia-secundaria h3 {
+            color: #004080;
+            font-size: 1.3em;
+            margin: 0;
+        }
+        .fecha {
+            font-size: 0.9em;
+            color: #666;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        /* Sección Lateral */
+        .sidebar h3 {
+            color: #333;
+            border-bottom: 2px solid #555;
+            padding-bottom: 5px;
+        }
+        .sidebar ul {
+            list-style: square;
+            padding-left: 20px;
+        }
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Pie de Página */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1a1a1a;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>EL TITULAR</h1>
+        <p>Edición de Hoy: Jueves, 30 de Octubre de 2025</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#nacional">NACIONAL</a></li>
+            <li><a href="#internacional">INTERNACIONAL</a></li>
+            <li><a href="#deportes">DEPORTES</a></li>
+            <li><a href="#economia">ECONOMÍA</a></li>
+            <li><a href="#cultura">CULTURA</a></li>
+            <li><a href="#opinion">OPINIÓN</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        
+        <div class="main-content">
+            
+            <section id="nacional">
+                <div class="noticia-principal">
+                    <h2>🚨 Exclusiva: El Gobierno Anuncia Histórica Reforma Educativa</h2>
+                    <span class="fecha">NACIONAL | 30 de Octubre de 2025</span>
+                    <p>Tras meses de debates, el Congreso aprueba un paquete de medidas que transformarán el sistema educativo del país. La reforma incluye la digitalización de aulas y la capacitación de miles de maestros. Los detalles de la implementación serán revelados mañana.</p>
+                    <a href="#" style="color: #cc0000; font-weight: bold;">[AMPLIAR INFORMACIÓN]</a>
+                </div>
+            </section>
+
+            <hr> <h3>Otras Noticias Relevantes</h3>
+            
+            <section id="internacional">
+                <div class="noticia-secundaria">
+                    <h3>Cumbre Mundial: Acuerdo Climático Alcanza Nuevos Objetivos</h3>
+                    <span class="fecha">INTERNACIONAL | Hace 2 horas</span>
+                    <p>Líderes de 50 naciones se comprometen a reducir las emisiones de carbono en un 20% para la próxima década. La presión de la sociedad civil fue clave en la negociación.</p>
+                </div>
+            </section>
+
+            <section id="deportes">
+                <div class="noticia-secundaria">
+                    <h3>🏆 Final Épica: El Campeón Defensor Cae en Tiempo Extra</h3>
+                    <span class="fecha">DEPORTES | 29 de Octubre de 2025</span>
+                    <p>Una noche dramática en el estadio. 'Los Halcones' sorprendieron a todos con un gol de último minuto. Revive los mejores momentos y las declaraciones post-partido.</p>
+                </div>
+            </section>
+
+            <section id="economia">
+                <div class="noticia-secundaria">
+                    <h3>Mercados Tranquilos a la Espera del Informe de Inflación</h3>
+                    <span class="fecha">ECONOMÍA | 30 de Octubre de 2025</span>
+                    <p>La Bolsa mantiene la cautela mientras el Banco Central se prepara para publicar cifras clave que podrían determinar la próxima subida de tasas de interés.</p>
+                </div>
+            </section>
+
+        </div> 
+        <div class="sidebar">
+            
+            <h3>Últimas Hora</h3>
+            <ul>
+                <li><a href="#">Tráfico colapsa la entrada a la ciudad (Actualización)</a></li>
+                <li><a href="#">El horóscopo de hoy: ¿Qué depara tu signo?</a></li>
+                <li><a href="#">Cultura: La nueva obra de teatro es un éxito rotundo</a></li>
+                <li><a href="#">Tecnología: Lanzan un nuevo smartphone plegable</a></li>
+            </ul>
+            
+            <hr>
+            
+            <section id="opinion">
+                <h3>Columna de Opinión</h3>
+                <blockquote style="border-left: 3px solid #cc0000; padding-left: 10px;">
+                    <p>"La política necesita menos ruido y más acuerdos, es hora de poner el interés público primero."</p>
+                    <cite>- Por Ana Gómez, Analista Política</cite>
+                </blockquote>
+            </section>
+
+            <hr>
+
+            <h3>Publicidad</h3>
+            <div style="background-color: #ddd; padding: 20px; text-align: center; margin-top: 15px;">
+                **¡Anuncia aquí!**<br>
+                Contacta a nuestro equipo de ventas.
+            </div>
+
+        </div>
+        </div>
+
+    <footer>
+        <p>EL TITULAR | Tu diario confiable desde 1999</p>
+        <p>Contacto | Aviso Legal | Políticas de Privacidad</p>
+    </footer>
+
+</body>
+</html>
