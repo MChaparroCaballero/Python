@@ -15,8 +15,8 @@ nicknames= [] #array de nombres
 puntuacion_global=0
 puntuacion_media=0
 ranking_de_jugadores = {} #lista de diccionarios
-nombre_archivo_general = 'resumen_general.txt'
-nombre_archivo_ranking ='ranking_jugadores.txt'
+nombre_archivo_general = 'resumen.txt'
+nombre_archivo_ranking ='scores.txt'
 try:
     # Abrimos el archivo en modo lectura ('r') con manejo automático de cierre.
     with open(archivo, 'r', encoding='utf-8') as file:
@@ -97,4 +97,5 @@ except FileNotFoundError:
 except Exception as e:
     # Manejar otros posibles errores (ej. permisos)
     print(f"Ocurrió un error al leer el archivo: {e}")
+
     sys.exit(1)
