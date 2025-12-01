@@ -34,7 +34,7 @@ try:
             if not linea_leida:
                 # Omitimos líneas vacías
                 continue
-            campos = linea_leida.split(';')
+            campos = linea_leida.split('.')
             #con esto comprobamos si existe el nickname en el array y si no es asi lo mete
             if len(campos) < 3:
                 # Línea malformada: se espera al menos 3 campos separados por ';'
@@ -46,7 +46,7 @@ try:
             
             try:
                 # 2. Convertimos la puntuación a entero (INT) y la guardamos
-                puntuaje_actual = int(campos[2].strip())
+                puntuaje_actual = int(campos[1].strip())
             except ValueError:
                 # Omitimos la línea si la puntuación no es un número
                 continue
@@ -114,4 +114,5 @@ except FileNotFoundError:
 except Exception as e:
     # Manejar otros posibles errores (ej. permisos)
     print(f"Ocurrió un error al leer el archivo: {e}")
+
     sys.exit(1)
