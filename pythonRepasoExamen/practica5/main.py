@@ -84,7 +84,7 @@ try:
             archivo_salida.write("--- RESUMEN GENERAL SYNAPSE GAME ---\n")
             archivo_salida.write("Total de partidas: " + str(total_partidas) + "\n")
             archivo_salida.write("Total de jugadores distintos: " + str(len(nicknames)) + "\n")
-            archivo_salida.write("Puntuacion media global: " + f"{puntuacion_media:.2f}" + "\n")
+            archivo_salida.write("Puntuacion media global: " + f"{puntuacion_media:.2f}" + "\n") #lo de ..df es un formato antes de ppasarlo a string de 2 decimales
     except Exception as e:
         print(f"Ocurrió un error al escribir el archivo resumen: {e}")
 
@@ -120,4 +120,5 @@ except Exception as e:
     print(f"Ocurrió un error al leer el archivo: {e}")
 
     sys.exit(1)
+
 
