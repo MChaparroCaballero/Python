@@ -22,6 +22,10 @@ nombre_archivo_ranking ='scores.txt'
 def obtener_puntuacion(diccionario_jugador):
     """Devuelve la puntuación para usarla como clave de ordenación."""
     return diccionario_jugador['puntuaje']
+
+def crear_archivo_resumen(total_partidas,nicknames,puntuacion_media):
+
+def crear_archivo_scores():
 try:
     # Abrimos el archivo en modo lectura ('r') con manejo automático de cierre.
     with open(archivo, 'r', encoding='utf-8') as file:
@@ -116,3 +120,4 @@ except Exception as e:
     print(f"Ocurrió un error al leer el archivo: {e}")
 
     sys.exit(1)
+
